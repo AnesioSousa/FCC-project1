@@ -1,4 +1,5 @@
 import logo from "./assets/react.svg";
+import groupPic from "./img/Group.png";
 
 export default function App() {
   return (
@@ -30,15 +31,22 @@ export default function App() {
           <h1 className="self-start  ml-7 text-[39.06px] font-bold mb-7">
             Fun facts about React
           </h1>
-          <ul className="list-image-[url(./img/ellipse.png)]">
-            <li className="pb-5">Was first release in 2013</li>
-            <li className="pb-5">Was originally created by Jordan Walke</li>
-            <li className="pb-5">Has well over 100K stars on Github</li>
-            <li className="pb-5">Is maintained by Facebook</li>
-            <li className="pb-5">
-              Powers thousands of enterprise apps, including mobile apps
-            </li>
-          </ul>
+          <div className="flex justify-between w-full">
+            <ul className="list-image-[url(./img/ellipse.png)] ml-28 mt-3 ">
+              <li className="pb-4">Was first release in 2013</li>
+              <li className="pb-4">Was originally created by Jordan Walke</li>
+              <li className="pb-4">Has well over 100K stars on Github</li>
+              <li className="pb-4">Is maintained by Facebook</li>
+              <li className="pb-4">
+                Powers thousands of enterprise apps, including mobile apps
+              </li>
+            </ul>
+            <img
+              src={groupPic}
+              alt="React white icon cut in a half"
+              className="h-full"
+            />
+          </div>
         </div>
       </div>
     </div>
